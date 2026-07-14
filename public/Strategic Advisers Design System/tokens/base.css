@@ -1,0 +1,65 @@
+/* Strategic Advisers — Base element styles & helpers.
+   Applies the tokens to real elements so cards/kits render on-brand by default. */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--text-body);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+  color: var(--text-heading);
+  line-height: var(--lh-heading);
+  letter-spacing: var(--ls-heading);
+  font-weight: var(--fw-semibold);
+  margin: 0 0 0.5em;
+  text-wrap: balance;
+}
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+h4 { font-size: var(--fs-h4); }
+
+p { margin: 0 0 1em; text-wrap: pretty; }
+
+a { color: var(--text-link); text-decoration: none; transition: color var(--dur-fast) var(--ease-standard); }
+a:hover { color: var(--text-link-hover); }
+
+strong { font-weight: var(--fw-semibold); color: var(--text-heading); }
+
+::selection { background: var(--red-200); color: var(--navy-900); }
+
+:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 2px; }
+
+/* Display headline helpers */
+.sa-display { font-family: var(--font-display); font-weight: var(--fw-semibold); line-height: var(--lh-tight); letter-spacing: var(--ls-tight); color: var(--text-heading); }
+.sa-display--2xl { font-size: var(--fs-display-2xl); }
+.sa-display--xl { font-size: var(--fs-display-xl); }
+.sa-display--lg { font-size: var(--fs-display-lg); }
+
+/* Mono eyebrow / kicker */
+.sa-eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-medium);
+  letter-spacing: var(--ls-eyebrow);
+  text-transform: uppercase;
+  color: var(--text-accent);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sa-lead { font-size: var(--fs-lead); line-height: var(--lh-snug); color: var(--text-muted); }
+
+/* Layout container */
+.sa-container { width: 100%; max-width: var(--container-max); margin-inline: auto; padding-inline: var(--gutter); }
+.sa-container--wide { max-width: var(--container-wide); }
+.sa-container--narrow { max-width: var(--container-narrow); }

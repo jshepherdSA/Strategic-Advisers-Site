@@ -1,0 +1,91 @@
+/* Strategic Advisers — Color tokens
+   Brand palette derived from the logo: navy #1d2d51 + red #a42e2e.
+   Base scales first, semantic aliases below. */
+:root {
+  /* Navy — primary brand, authority, structure */
+  --navy-950: #0b1225;
+  --navy-900: #101a35;
+  --navy-800: #152340;
+  --navy-700: #1d2d51; /* BRAND NAVY */
+  --navy-600: #2a4074;
+  --navy-500: #3a5493;
+  --navy-400: #5f74aa;
+  --navy-300: #8f9dc2;
+  --navy-200: #c1c9dd;
+  --navy-100: #e4e8f1;
+  --navy-50:  #f2f4f9;
+
+  /* Red — accent, energy, calls to action */
+  --red-950: #4c1616;
+  --red-900: #6d1f1f;
+  --red-800: #852626;
+  --red-700: #a42e2e; /* BRAND RED */
+  --red-600: #bb3838;
+  --red-500: #cd4a4a;
+  --red-400: #dc7070;
+  --red-300: #e89c9c;
+  --red-200: #f2c7c7;
+  --red-100: #f9e4e4;
+  --red-50:  #fdf3f3;
+
+  /* Neutrals — cool-leaning grays that sit under navy */
+  --gray-950: #0c0e13;
+  --gray-900: #191c23;
+  --gray-800: #282c35;
+  --gray-700: #3c424e;
+  --gray-600: #555c6a;
+  --gray-500: #737a89;
+  --gray-400: #99a0ad;
+  --gray-300: #c2c7d0;
+  --gray-200: #e0e3e9;
+  --gray-100: #eef0f4;
+  --gray-50:  #f7f8fa;
+  --white:    #ffffff;
+  --black:    #0c0e13;
+
+  /* Status */
+  --green-600: #2e7d5b;
+  --green-100: #e2f2ea;
+  --amber-600: #b5811f;
+  --amber-100: #f7edd6;
+  --blue-600:  #2a4074;
+  --blue-100:  #e4e8f1;
+
+  /* ---- Semantic aliases ---- */
+  --color-brand: var(--navy-700);
+  --color-brand-strong: var(--navy-900);
+  --color-accent: var(--red-700);
+  --color-accent-strong: var(--red-800);
+
+  --text-heading: var(--navy-900);
+  --text-body: var(--gray-800);
+  --text-muted: var(--gray-500);
+  --text-subtle: var(--gray-400);
+  --text-inverse: var(--white);
+  --text-on-navy: var(--navy-100);
+  --text-accent: var(--red-700);
+  --text-link: var(--navy-700);
+  --text-link-hover: var(--red-700);
+
+  --surface-page: var(--white);
+  --surface-subtle: var(--gray-50);
+  --surface-muted: var(--gray-100);
+  --surface-card: var(--white);
+  --surface-navy: var(--navy-700);
+  --surface-navy-deep: var(--navy-900);
+  --surface-accent: var(--red-700);
+  --surface-accent-soft: var(--red-50);
+
+  --border-subtle: var(--gray-200);
+  --border-default: var(--gray-300);
+  --border-strong: var(--gray-400);
+  --border-navy: var(--navy-700);
+  --border-on-navy: rgba(255, 255, 255, 0.16);
+
+  --focus-ring: var(--red-500);
+
+  --color-success: var(--green-600);
+  --color-warning: var(--amber-600);
+  --color-error: var(--red-700);
+  --color-info: var(--blue-600);
+}

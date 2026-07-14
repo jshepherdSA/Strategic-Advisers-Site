@@ -1,0 +1,7 @@
+/* Strategic Advisers — Webfonts
+   Display: Jost (geometric sans; closest Google Fonts match to the logo wordmark).
+   Body/UI: IBM Plex Sans (professional, approachable, highly legible).
+   Data/labels: IBM Plex Mono (data-driven accents, eyebrows, stat units).
+   NOTE: The exact logo wordmark typeface is unknown — Jost is a substitution.
+   Provide the licensed brand font files to replace it. */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
