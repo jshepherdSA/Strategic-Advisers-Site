@@ -1,0 +1,12 @@
+<!-- @dsCard group="Spacing" viewport="700x150" name="Corners" subtitle="Squared by default — every radius token is 0 (right angles only)" -->
+<!DOCTYPE html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>body{margin:0;background:var(--surface-page);padding:24px;display:flex;gap:18px;align-items:center;font-family:var(--font-mono)}
+.b{width:96px;height:70px;background:var(--navy-700);border-radius:var(--radius-md)}
+.b2{background:var(--red-700)}.b3{background:var(--navy-50);border:1px solid var(--border-subtle)}
+.note{font-family:var(--font-body);font-size:14px;line-height:1.5;color:var(--text-muted);max-width:230px}</style></head>
+<body>
+<div class="b"></div>
+<div class="b b2"></div>
+<div class="b b3"></div>
+<div class="note"><strong style="color:var(--navy-900);font-weight:600">Right angles only.</strong> All corners are square — <code>--radius-*</code> tokens resolve to 0.</div>
+</body></html>
