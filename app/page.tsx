@@ -137,7 +137,7 @@ export default function Home() {
               </p>
               <p className="sa-positioning__copy">
                 We build campaigns around audience behavior, business goals, message
-                clarity, and measurable performance—not generic marketing packages.
+                clarity, and measurable performance, not generic marketing packages.
               </p>
             </div>
           </div>
@@ -179,10 +179,10 @@ export default function Home() {
             />
           </div>
           <div className="sa-grid-industries">
-            {INDUSTRIES.map((label, i) => (
+            {INDUSTRIES.map((industry, i) => (
               <IndustryTile
-                key={label}
-                label={label}
+                key={industry.label}
+                industry={industry}
                 className="reveal"
                 style={delay((i % 4) * 70)}
               />

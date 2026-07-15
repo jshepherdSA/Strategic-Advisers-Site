@@ -20,6 +20,7 @@ export default function IndustriesPage() {
           'Different industries require different audiences, messages, timelines, and measures of success.',
           "Strategic Advisers brings cross-industry experience while building every campaign around the client's specific market, goals, and audience.",
         ]}
+        media
       />
 
       <section className="sa-section">

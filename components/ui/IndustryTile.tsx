@@ -1,12 +1,14 @@
 import { ArrowUpRight } from 'lucide-react'
+import { IndustryIcon } from './IndustryIcon'
+import type { HomeIndustry } from '@/lib/content'
 
 export function IndustryTile({
-  label,
+  industry,
   href = '/industries',
   className,
   style,
 }: {
-  label: string
+  industry: HomeIndustry
   href?: string
   className?: string
   style?: React.CSSProperties
@@ -17,7 +19,10 @@ export function IndustryTile({
       className={className ? `sa-industry-tile ${className}` : 'sa-industry-tile'}
       style={style}
     >
-      <span className="sa-industry-tile__label">{label}</span>
+      <span className="sa-industry-tile__badge">
+        <IndustryIcon icon={industry.icon} size={20} />
+      </span>
+      <span className="sa-industry-tile__label">{industry.label}</span>
       <span className="sa-industry-tile__arrow" aria-hidden>
         <ArrowUpRight size={18} />
       </span>

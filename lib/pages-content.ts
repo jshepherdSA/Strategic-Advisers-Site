@@ -2,6 +2,8 @@
 // Transcribed from reference/phase-one-content.tsx. Kept separate from the
 // homepage content in lib/content.ts.
 
+import type { IndustryIcon } from './content'
+
 /* ---------------------------------- Services --------------------------------- */
 
 export type ServiceSection = {
@@ -69,13 +71,13 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     ],
     items: [
       'Media Relations',
-      'Press Releases and Announcements',
       'Crisis Communications',
       'Reputation Management',
       'Executive Visibility',
       'Community Relations',
       'Content Strategy',
       'Message Development',
+      'Press Releases and Announcements',
     ],
     ctaLabel: 'Talk to Our PR Team',
   },
@@ -125,6 +127,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
 export type IndustryDetail = {
   index: string
   name: string
+  icon: IndustryIcon
   description: string
   services?: string
 }
@@ -133,6 +136,7 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '01',
     name: 'Higher Education',
+    icon: 'graduation-cap',
     description:
       'We help colleges and universities increase awareness, generate inquiries, support enrollment goals, promote academic programs, and reach students at every stage of the decision process.',
     services:
@@ -141,6 +145,7 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '02',
     name: 'Manufacturing & Industrial',
+    icon: 'factory',
     description:
       'We help manufacturers communicate complex products, reach customers and distributors, support sales teams, promote capabilities, recruit employees, and strengthen market visibility.',
     services:
@@ -149,6 +154,7 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '03',
     name: 'E-Commerce & Consumer Brands',
+    icon: 'shopping-bag',
     description:
       'We help e-commerce companies and consumer brands increase product awareness, acquire customers, improve retargeting, support promotions, and connect advertising activity to sales.',
     services:
@@ -157,6 +163,7 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '04',
     name: 'Healthcare & Nonprofits',
+    icon: 'heart-pulse',
     description:
       'We help healthcare organizations and nonprofits educate audiences, increase awareness, support fundraising, recruit participants, promote services, and communicate sensitive or complex information.',
     services:
@@ -165,6 +172,7 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '05',
     name: 'Financial Institutions',
+    icon: 'landmark',
     description:
       'We help banks, lenders, financial organizations, and professional service firms promote products, build trust, reach customers, and strengthen community visibility.',
     services:
@@ -173,6 +181,7 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '06',
     name: 'Public Sector & Advocacy',
+    icon: 'megaphone',
     description:
       'We help public agencies, advocacy organizations, and community-focused groups explain issues, increase awareness, engage stakeholders, and build public support.',
     services:
@@ -181,12 +190,14 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
   {
     index: '07',
     name: 'Housing & Community Development',
+    icon: 'house',
     description:
       'We help housing organizations, real estate groups, community developers, and multi-location properties promote opportunities, reach residents, generate inquiries, and strengthen local awareness.',
   },
   {
     index: '08',
     name: 'Regional & Multi-Location Businesses',
+    icon: 'map-pin',
     description:
       'We help regional brands and multi-location organizations build market awareness, promote individual locations, maintain brand consistency, and connect local campaigns with broader business goals.',
   },

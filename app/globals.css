@@ -954,15 +954,26 @@ section[id] { scroll-margin-top: 110px; }
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   gap: 16px;
-  padding: 26px 28px;
+  padding: 20px 22px;
   background: #fff;
   border: 1px solid var(--border-subtle);
   transition:
     transform var(--dur-base) var(--ease-standard),
     box-shadow var(--dur-base) var(--ease-standard);
 }
+.sa-industry-tile__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  background: var(--navy-900);
+  color: #fff;
+  transition: background var(--dur-base) var(--ease-out);
+}
+.sa-industry-tile:hover .sa-industry-tile__badge { background: var(--red-700); }
 .sa-industry-tile::before {
   content: "";
   position: absolute;
@@ -976,9 +987,11 @@ section[id] { scroll-margin-top: 110px; }
 .sa-industry-tile:hover { transform: translate(-4px, -4px); box-shadow: var(--shadow-block); }
 .sa-industry-tile:hover::before { width: 4px; }
 .sa-industry-tile__label {
+  flex: 1;
   font-family: var(--font-display);
   font-weight: var(--fw-semibold);
-  font-size: 18px;
+  font-size: 17px;
+  line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--navy-900);
 }
@@ -989,6 +1002,46 @@ section[id] { scroll-margin-top: 110px; }
    Interior page hero (Services / Industries / About / Contact)
    ============================================================= */
 .sa-pagehero { padding-block: clamp(3rem, 6vw, 5.5rem) clamp(2rem, 4vw, 3.5rem); max-width: 860px; }
+.sa-pagehero--split {
+  max-width: none;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: clamp(32px, 5vw, 64px);
+  align-items: center;
+}
+.sa-pagehero--split .sa-pagehero__content { max-width: 620px; }
+.sa-pagehero__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--navy-800);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.sa-pagehero__media::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--red-700);
+}
+.sa-pagehero__media-icon { color: rgba(255, 255, 255, 0.4); }
+.sa-pagehero__media-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 860px) {
+  .sa-pagehero--split { grid-template-columns: 1fr; }
+  .sa-pagehero--split .sa-pagehero__content { max-width: none; }
+}
 .sa-pagehero__title {
   font-family: var(--font-display);
   font-weight: var(--fw-semibold);
@@ -1092,9 +1145,22 @@ section[id] { scroll-margin-top: 110px; }
 .sa-ind-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px 48px; margin-top: 56px; }
 .sa-ind-card { border-top: 3px solid var(--navy-200); padding-top: 22px; transition: border-color var(--dur-base) var(--ease-standard); }
 .sa-ind-card:hover { border-top-color: var(--red-700); }
+.sa-ind-card__head { display: flex; align-items: center; gap: 14px; }
+.sa-ind-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  background: var(--navy-900);
+  color: #fff;
+  transition: background var(--dur-base) var(--ease-out);
+}
+.sa-ind-card:hover .sa-ind-card__badge { background: var(--red-700); }
 .sa-ind-card__index { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0.06em; color: var(--red-700); }
 .sa-ind-card__title {
-  margin-top: 12px;
+  margin-top: 18px;
   font-family: var(--font-display);
   font-weight: var(--fw-semibold);
   font-size: clamp(1.25rem, 1.9vw, 1.5rem);
@@ -1111,6 +1177,7 @@ section[id] { scroll-margin-top: 110px; }
 .sa-prose { max-width: 720px; }
 .sa-prose p { font-size: 17px; line-height: 1.75; color: var(--text-body); }
 .sa-prose p + p { margin-top: 18px; }
+.sa-about__logo { margin-top: 34px; width: clamp(190px, 20vw, 240px); height: auto; }
 .sa-values { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 44px; }
 .sa-value {
   display: inline-flex;

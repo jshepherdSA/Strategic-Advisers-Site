@@ -56,15 +56,27 @@ export const SERVICES: Service[] = [
   },
 ]
 
-export const INDUSTRIES: string[] = [
-  'Higher Education',
-  'Manufacturing & Industrial',
-  'E-Commerce & Consumer Brands',
-  'Healthcare & Nonprofits',
-  'Financial Institutions',
-  'Public Sector & Advocacy',
-  'Housing & Community Development',
-  'Regional & Multi-Location Businesses',
+export type IndustryIcon =
+  | 'graduation-cap'
+  | 'factory'
+  | 'shopping-bag'
+  | 'heart-pulse'
+  | 'landmark'
+  | 'megaphone'
+  | 'house'
+  | 'map-pin'
+
+export type HomeIndustry = { label: string; icon: IndustryIcon }
+
+export const INDUSTRIES: HomeIndustry[] = [
+  { label: 'Higher Education', icon: 'graduation-cap' },
+  { label: 'Manufacturing & Industrial', icon: 'factory' },
+  { label: 'E-Commerce & Consumer Brands', icon: 'shopping-bag' },
+  { label: 'Healthcare & Nonprofits', icon: 'heart-pulse' },
+  { label: 'Financial Institutions', icon: 'landmark' },
+  { label: 'Public Sector & Advocacy', icon: 'megaphone' },
+  { label: 'Housing & Community Development', icon: 'house' },
+  { label: 'Regional & Multi-Location Businesses', icon: 'map-pin' },
 ]
 
 export type WhyPoint = { title: string; copy: string }
@@ -101,6 +113,6 @@ export const HERO_CHANNELS: string[] = [
   'CTV & Streaming',
   'Radio & Audio',
   'Television',
-  'Billboards / OOH',
+  'Billboards / Digital Out of Home',
   'Earned Media',
 ]

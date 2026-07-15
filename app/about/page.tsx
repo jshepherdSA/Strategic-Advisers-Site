@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { PageHero } from '@/components/site/PageHero'
 import { Eyebrow } from '@/components/ui/Eyebrow'
 import { SectionHeader } from '@/components/ui/SectionHeader'
@@ -21,6 +22,7 @@ export default function AboutPage() {
           'Strategic Advisers helps organizations communicate clearly, reach the right audiences, and turn strategy into action.',
           'Our firm combines the storytelling discipline of journalism and public relations with the precision, targeting, and measurement of modern digital advertising.',
         ]}
+        media
       />
 
       {/* Our Story */}
@@ -32,6 +34,13 @@ export default function AboutPage() {
                 <Eyebrow>About</Eyebrow>
               </div>
               <h2 className="sa-positioning__title">Our Story</h2>
+              <Image
+                src="/logos/sa-logo-full-color.png"
+                alt="Strategic Advisers"
+                width={240}
+                height={108}
+                className="sa-about__logo"
+              />
             </div>
             <div className="sa-prose reveal">
               {ABOUT_STORY.map((paragraph, i) => (
