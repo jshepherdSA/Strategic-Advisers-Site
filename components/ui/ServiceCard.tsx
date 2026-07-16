@@ -1,12 +1,5 @@
-import { Target, Radio, Newspaper, Landmark, type LucideIcon } from 'lucide-react'
-import type { Service, ServiceIcon } from '@/lib/content'
-
-const ICONS: Record<ServiceIcon, LucideIcon> = {
-  target: Target,
-  radio: Radio,
-  newspaper: Newspaper,
-  landmark: Landmark,
-}
+import type { Service } from '@/lib/content'
+import { ServiceGlyph } from './ServiceGlyph'
 
 export function ServiceCard({
   service,
@@ -17,7 +10,6 @@ export function ServiceCard({
   className?: string
   style?: React.CSSProperties
 }) {
-  const Icon = ICONS[service.icon]
   return (
     <a
       href={service.href}
@@ -25,7 +17,7 @@ export function ServiceCard({
       style={style}
     >
       <span className="sa-service-card__icon">
-        <Icon size={26} strokeWidth={1.75} />
+        <ServiceGlyph icon={service.icon} size={26} />
       </span>
       <div>
         <h3 className="sa-service-card__title">{service.title}</h3>

@@ -24,10 +24,10 @@ export default function ServicesPage() {
       />
 
       {SERVICE_SECTIONS.map((section, i) => (
-        <ServiceDetail key={section.id} section={section} subtle={i % 2 === 1} />
+        <ServiceDetail key={section.id} section={section} subtle={i % 2 === 1} flip={i % 2 === 1} />
       ))}
 
-      <section className="sa-section" style={{ paddingTop: 0 }}>
+      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
         <CTASection
           title="Not Sure Which Services You Need?"
           intro="Tell us what you are trying to accomplish. We will help identify the right mix of strategy, media, and communications support."

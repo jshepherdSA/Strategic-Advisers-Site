@@ -2,7 +2,7 @@
 // Transcribed from reference/phase-one-content.tsx. Kept separate from the
 // homepage content in lib/content.ts.
 
-import type { IndustryIcon } from './content'
+import type { IndustryIcon, ServiceIcon } from './content'
 
 /* ---------------------------------- Services --------------------------------- */
 
@@ -10,6 +10,7 @@ export type ServiceSection = {
   id: string
   index: string
   title: string
+  icon: ServiceIcon
   paragraphs: string[]
   items: string[]
   ctaLabel?: string
@@ -20,6 +21,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     id: 'digital-advertising',
     index: '01',
     title: 'Digital Advertising',
+    icon: 'target',
     paragraphs: [
       'Strategic Advisers plans, launches, manages, and optimizes digital advertising campaigns designed to reach specific audiences and support measurable business goals.',
       'Our digital work supports lead generation, enrollment, e-commerce sales, customer acquisition, recruitment, awareness, event attendance, fundraising, and public education.',
@@ -42,6 +44,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     id: 'media-strategy',
     index: '02',
     title: 'Media Strategy & Traditional Buying',
+    icon: 'radio',
     paragraphs: [
       'Some campaigns need more than digital media alone.',
       'Strategic Advisers helps clients evaluate, plan, and coordinate traditional media placements when they support the audience, market, and campaign goal.',
@@ -65,6 +68,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     id: 'public-relations',
     index: '03',
     title: 'Public Relations',
+    icon: 'newspaper',
     paragraphs: [
       'Strategic Advisers helps organizations communicate clearly, earn meaningful visibility, and build long-term credibility.',
       'Founded by award-winning journalists, our firm understands how to identify strong stories, create compelling messages, and communicate effectively with media, customers, stakeholders, and communities.',
@@ -85,6 +89,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     id: 'public-affairs',
     index: '04',
     title: 'Public Affairs',
+    icon: 'landmark',
     paragraphs: [
       'Strategic Advisers supports organizations navigating public issues, advocacy efforts, community conversations, and stakeholder communications.',
       'We help clients explain complex topics, build support, respond to opposition, engage communities, and move audiences toward action.',
@@ -105,6 +110,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     id: 'strategy',
     index: '05',
     title: 'Strategy, Measurement and Optimization',
+    icon: 'line-chart',
     paragraphs: [
       'Strong campaigns start with clear goals and improve through consistent analysis.',
       'Strategic Advisers connects strategy, audience, creative, media, measurement, and reporting so clients understand both campaign activity and business impact.',

@@ -64,53 +64,57 @@ export default function Home() {
           </div>
 
           <div className="sa-hero__collage reveal" style={delay(220)}>
-            <div className="sa-hero__feature">
-              <div className="sa-hero__feature-title">
-                One team.
-                <br />
-                One strategy.
-                <br />
-                Every channel.
+            <div className="sa-hero__col sa-hero__col--left">
+              <div className="sa-hero__feature">
+                <div className="sa-hero__feature-title">
+                  One team.
+                  <br />
+                  One strategy.
+                  <br />
+                  Every channel.
+                </div>
+                <p className="sa-hero__feature-sub">
+                  Integrated campaigns across paid, earned &amp; owned media.
+                </p>
               </div>
-              <p className="sa-hero__feature-sub">
-                Integrated campaigns across paid, earned &amp; owned media.
-              </p>
+
+              <div className="sa-hero__tile">
+                <ul className="sa-hero__channels">
+                  {HERO_CHANNELS.map((channel) => (
+                    <li key={channel}>{channel}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
 
-            <div className="sa-hero__logos">
-              <span>
-                <Image src="/logos/dsp/google.webp" alt="Google" width={100} height={100} />
-              </span>
-              <span>
-                <Image src="/logos/dsp/googleads.png" alt="Google Ads" width={100} height={91} />
-              </span>
-              <span>
-                <Image src="/logos/dsp/meta.png" alt="Meta" width={140} height={93} />
-              </span>
-              <span>
-                <Image src="/logos/dsp/tradedesk.png" alt="The Trade Desk" width={100} height={100} />
-              </span>
+            <div className="sa-hero__col sa-hero__col--right">
+              <Link href="/about" className="sa-hero__markbox" aria-label="About Strategic Advisers">
+                <Image
+                  src="/logos/sa-mark-color.png"
+                  alt="Strategic Advisers"
+                  width={100}
+                  height={100}
+                  className="sa-hero__mark"
+                />
+              </Link>
+
+              <div className="sa-hero__logos">
+                <span>
+                  <Image src="/logos/dsp/google.webp" alt="Google" width={100} height={100} />
+                </span>
+                <span>
+                  <Image src="/logos/dsp/googleads.png" alt="Google Ads" width={100} height={91} />
+                </span>
+                <span>
+                  <Image src="/logos/dsp/meta.png" alt="Meta" width={140} height={93} />
+                </span>
+                <span>
+                  <Image src="/logos/dsp/tradedesk.png" alt="The Trade Desk" width={100} height={100} />
+                </span>
+              </div>
+
+              <HeroLearnMore />
             </div>
-
-            <Link href="/about" className="sa-hero__markbox" aria-label="About Strategic Advisers">
-              <Image
-                src="/logos/sa-mark-color.png"
-                alt="Strategic Advisers"
-                width={100}
-                height={100}
-                className="sa-hero__mark"
-              />
-            </Link>
-
-            <div className="sa-hero__tile">
-              <ul className="sa-hero__channels">
-                {HERO_CHANNELS.map((channel) => (
-                  <li key={channel}>{channel}</li>
-                ))}
-              </ul>
-            </div>
-
-            <HeroLearnMore />
           </div>
         </div>
       </section>
@@ -217,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* Closing CTA */}
-      <section className="sa-section" style={{ paddingTop: 0 }}>
+      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
         <CTASection
           eyebrow="Get started"
           title="Ready to Reach the Right Audience?"

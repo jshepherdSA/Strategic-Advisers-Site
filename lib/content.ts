@@ -15,7 +15,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Contact', href: '/contact' },
 ]
 
-export type ServiceIcon = 'target' | 'radio' | 'newspaper' | 'landmark'
+export type ServiceIcon = 'target' | 'radio' | 'newspaper' | 'landmark' | 'line-chart'
 
 export type Service = {
   icon: ServiceIcon

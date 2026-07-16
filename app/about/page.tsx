@@ -35,10 +35,10 @@ export default function AboutPage() {
               </div>
               <h2 className="sa-positioning__title">Our Story</h2>
               <Image
-                src="/logos/sa-logo-full-color.png"
+                src="/logos/sa-mark-full-color.png"
                 alt="Strategic Advisers"
-                width={240}
-                height={108}
+                width={160}
+                height={160}
                 className="sa-about__logo"
               />
             </div>
@@ -87,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="sa-section" style={{ paddingTop: 0 }}>
+      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
         <CTASection
           title="Looking for a Strategic Partner?"
           intro="Let's talk about where your organization is going and how Strategic Advisers can help you get there."

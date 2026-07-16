@@ -1,20 +1,26 @@
 import { Eyebrow } from './Eyebrow'
 import { Button } from './Button'
+import { ServiceGlyph } from './ServiceGlyph'
 import type { ServiceSection } from '@/lib/pages-content'
 
 /** One service section on the Services page: description + "Services Include" list. */
 export function ServiceDetail({
   section,
   subtle,
+  flip,
 }: {
   section: ServiceSection
   subtle?: boolean
+  flip?: boolean
 }) {
   return (
     <section id={section.id} className={subtle ? 'sa-section sa-section--subtle' : 'sa-section'}>
       <div className="sa-container">
-        <div className="sa-svc">
+        <div className={flip ? 'sa-svc sa-svc--flip' : 'sa-svc'}>
           <div className="sa-svc__head reveal">
+            <span className="sa-svc__badge">
+              <ServiceGlyph icon={section.icon} size={26} />
+            </span>
             <div className="sa-svc__eyebrow">
               <Eyebrow>{section.index}</Eyebrow>
             </div>
