@@ -2,7 +2,7 @@
 // Structured copy in use by the app. Full verbatim brief lives in
 // reference/phase-one-content.tsx.
 
-export const CTA_LABEL = 'Schedule a Strategy Call'
+export const CTA_LABEL = 'Schedule a Discovery Call'
 export const CTA_HREF = '/contact'
 
 export type NavLink = { label: string; href: string }
@@ -101,6 +101,10 @@ export const WHY_POINTS: WhyPoint[] = [
   {
     title: 'Flexible Support',
     copy: 'We can lead a complete campaign or strengthen an existing internal marketing and communications team.',
+  },
+  {
+    title: 'Exclusive Access',
+    copy: 'We have Alpha and Beta access into existing and emerging technologies that no other marketing firm serving the market has access to.',
   },
 ]
 

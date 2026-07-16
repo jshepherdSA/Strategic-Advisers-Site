@@ -235,6 +235,10 @@ export const DIFFERENTIATORS: Differentiator[] = [
     title: 'We Work as an Extension of the Client Team',
     copy: 'We provide the strategy, expertise, and execution clients need without adding unnecessary layers.',
   },
+  {
+    title: 'Exclusive Access',
+    copy: 'We have Alpha and Beta access into existing and emerging technologies that no other marketing firm serving the market has access to.',
+  },
 ]
 
 export const VALUES: string[] = [

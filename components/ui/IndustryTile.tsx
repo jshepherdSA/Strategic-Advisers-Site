@@ -1,4 +1,3 @@
-import { ArrowUpRight } from 'lucide-react'
 import { IndustryIcon } from './IndustryIcon'
 import type { HomeIndustry } from '@/lib/content'
 
@@ -23,9 +22,6 @@ export function IndustryTile({
         <IndustryIcon icon={industry.icon} size={20} />
       </span>
       <span className="sa-industry-tile__label">{industry.label}</span>
-      <span className="sa-industry-tile__arrow" aria-hidden>
-        <ArrowUpRight size={18} />
-      </span>
     </a>
   )
 }

@@ -995,8 +995,6 @@ section[id] { scroll-margin-top: 110px; }
   letter-spacing: -0.01em;
   color: var(--navy-900);
 }
-.sa-industry-tile__arrow { display: inline-flex; color: var(--navy-300); transition: color var(--dur-base) var(--ease-standard); }
-.sa-industry-tile:hover .sa-industry-tile__arrow { color: var(--red-700); }
 
 /* =============================================================
    Interior page hero (Services / Industries / About / Contact)
@@ -1195,22 +1193,6 @@ section[id] { scroll-margin-top: 110px; }
 /* =============================================================
    Interior pages — Contact
    ============================================================= */
-.sa-contact { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 5vw, 64px); align-items: start; }
-.sa-contact__aside-h {
-  font-family: var(--font-display);
-  font-weight: var(--fw-semibold);
-  font-size: clamp(1.5rem, 2.4vw, 2rem);
-  letter-spacing: -0.015em;
-  color: var(--navy-900);
-}
-.sa-contact__points { list-style: none; margin: 26px 0 0; padding: 0; display: flex; flex-direction: column; gap: 20px; }
-.sa-contact__points li { display: flex; gap: 14px; }
-.sa-contact__points .n { font-family: var(--font-mono); font-size: 13px; color: var(--red-700); flex-shrink: 0; padding-top: 2px; }
-.sa-contact__points p { font-size: 15.5px; line-height: 1.55; color: var(--text-body); }
-.sa-contact__loc { margin-top: 34px; padding-top: 26px; border-top: 1px solid var(--border-subtle); }
-.sa-contact__loc-h { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 8px; }
-.sa-contact__loc-v { font-size: 16px; color: var(--navy-900); font-weight: var(--fw-medium); }
-
 .sa-form {
   display: flex;
   flex-direction: column;
@@ -1260,6 +1242,5 @@ section[id] { scroll-margin-top: 110px; }
 .sa-form__success h3 { font-family: var(--font-display); font-weight: var(--fw-semibold); font-size: 24px; color: var(--navy-900); margin-bottom: 10px; }
 .sa-form__success p { color: var(--text-muted); font-size: 16px; line-height: 1.6; }
 @media (max-width: 860px) {
-  .sa-contact { grid-template-columns: 1fr; gap: 36px; }
   .sa-form__row { grid-template-columns: 1fr; }
 }
