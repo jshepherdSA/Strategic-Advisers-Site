@@ -476,9 +476,7 @@ section[id] { scroll-margin-top: 110px; }
   position: sticky;
   top: 0;
   z-index: 50;
-  background: rgba(255, 255, 255, 0.86);
-  backdrop-filter: saturate(180%) blur(14px);
-  -webkit-backdrop-filter: saturate(180%) blur(14px);
+  background: #fff;
   border-bottom: 1px solid var(--border-subtle);
 }
 .sa-nav__inner {
@@ -1098,6 +1096,10 @@ section[id] { scroll-margin-top: 110px; }
 /* alternate which side the content / list sit on */
 .sa-svc--flip .sa-svc__head { order: 2; }
 .sa-svc--flip .sa-svc__aside { order: 1; }
+/* right-side sections read toward the right edge */
+.sa-svc--flip .sa-svc__head { text-align: right; }
+.sa-svc--flip .sa-svc__copy { margin-left: auto; }
+.sa-svc--flip .sa-svc__eyebrow .sa-eyebrow { flex-direction: row-reverse; }
 .sa-svc__badge {
   display: inline-flex;
   align-items: center;
@@ -1121,13 +1123,13 @@ section[id] { scroll-margin-top: 110px; }
 .sa-svc__cta { margin-top: 30px; }
 .sa-svc__aside-h {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-muted);
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   border-bottom: 1px solid var(--border-default);
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 }
 .sa-svc__items {
   list-style: none;
@@ -1135,21 +1137,21 @@ section[id] { scroll-margin-top: 110px; }
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 13px 20px;
+  gap: 22px 28px;
 }
 .sa-svc__items li {
   display: flex;
   align-items: flex-start;
-  gap: 10px;
-  font-size: 15px;
-  line-height: 1.4;
+  gap: 12px;
+  font-size: 17px;
+  line-height: 1.5;
   color: var(--navy-800);
 }
 .sa-svc__items li::before {
   content: "";
-  width: 7px;
-  height: 7px;
-  margin-top: 6px;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
   background: var(--red-700);
   flex-shrink: 0;
 }
@@ -1158,6 +1160,10 @@ section[id] { scroll-margin-top: 110px; }
   /* stacked: always show the heading before the list, regardless of flip */
   .sa-svc--flip .sa-svc__head { order: 0; }
   .sa-svc--flip .sa-svc__aside { order: 0; }
+  /* stacked full-width: left-align everything again */
+  .sa-svc--flip .sa-svc__head { text-align: left; }
+  .sa-svc--flip .sa-svc__copy { margin-left: 0; }
+  .sa-svc--flip .sa-svc__eyebrow .sa-eyebrow { flex-direction: row; }
 }
 @media (max-width: 520px) { .sa-svc__items { grid-template-columns: 1fr; } }
 
