@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"form page: %{http_code}\\\\n\" \"https://form.jotform.com/261974274444061\")",
+      "Bash(curl -s -o /dev/null -w \"embed handler: %{http_code}\\\\n\" \"https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js\")"
+    ]
+  }
+}

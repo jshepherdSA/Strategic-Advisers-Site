@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { PageHero } from '@/components/site/PageHero'
-import { ContactForm } from '@/components/site/ContactForm'
+import { JotFormEmbed } from '@/components/site/JotFormEmbed'
 
 export const metadata: Metadata = {
   title: 'Contact Strategic Advisers',
@@ -23,7 +23,7 @@ export default function ContactPage() {
       <section className="sa-section">
         <div className="sa-container sa-container--narrow">
           <div className="reveal">
-            <ContactForm />
+            <JotFormEmbed />
           </div>
         </div>
       </section>
