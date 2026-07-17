@@ -295,7 +295,7 @@ export const PARTNERS: Partner[] = [
   {
     name: 'Madison Walton-Smith',
     role: 'Partner',
-    photo: '/assets/team/Madison.png',
+    photo: '/assets/team/madison.png',
     bio: [
       'Madison Walton Smith is the Founder and Partner of Strategic Advisers Digital and an award-winning digital advertising and strategic communications executive with more than 15 years of experience developing integrated marketing strategies for organizations ranging from startups to Fortune 100 companies. Throughout her career, she has advised executive leadership teams on digital transformation, audience strategy, public relations, public affairs, and measurable business growth across higher education, manufacturing, healthcare, financial services, government, nonprofit, and consumer industries.',
       "After graduating from Virginia Tech, Madison joined The Trade Desk as one of its earliest employees in New York City during the company's rapid growth. There, she built and led a high-performing media team responsible for managing digital advertising campaigns for WPP, the world's largest advertising agency network, supporting some of the world's most recognizable brands and Fortune 100 companies. This experience provided a deep foundation in programmatic advertising, audience intelligence, large-scale media planning, and data-driven campaign optimization.",
@@ -304,14 +304,4 @@ export const PARTNERS: Partner[] = [
       'Madison lives in Greenville, South Carolina, with her husband and daughter. Outside of work, she enjoys playing tennis, spending time with family, and supporting organizations that strengthen the communities they serve.',
     ],
   },
-]
-
-export const VALUES: string[] = [
-  'Strategic Thinking',
-  'Clear Communication',
-  'Responsiveness',
-  'Accountability',
-  'Curiosity',
-  'Collaboration',
-  'Measurable Results',
 ]

@@ -5,7 +5,7 @@ import { Eyebrow } from '@/components/ui/Eyebrow'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { CTASection } from '@/components/ui/CTASection'
 import { PartnerCard } from '@/components/ui/PartnerCard'
-import { ABOUT_STORY, DIFFERENTIATORS, PARTNERS, VALUES } from '@/lib/pages-content'
+import { ABOUT_STORY, DIFFERENTIATORS, PARTNERS } from '@/lib/pages-content'
 
 export const metadata: Metadata = {
   title: 'About Strategic Advisers | Digital Advertising & PR Firm',
@@ -78,23 +78,6 @@ export default function AboutPage() {
           <div className="sa-partners">
             {PARTNERS.map((partner) => (
               <PartnerCard key={partner.name} partner={partner} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Values */}
-      <section className="sa-section sa-section--subtle">
-        <div className="sa-container">
-          <div className="reveal">
-            <SectionHeader eyebrow="Principles" title="Our Values" />
-          </div>
-          <div className="sa-values">
-            {VALUES.map((value, i) => (
-              <div key={value} className="sa-value reveal">
-                <span className="sa-value__index">{String(i + 1).padStart(2, '0')}</span>
-                <span className="sa-value__name">{value}</span>
-              </div>
             ))}
           </div>
         </div>
