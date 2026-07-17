@@ -162,6 +162,9 @@ img { display: block; max-width: 100%; }
 .sa-section { padding-block: var(--section-y); }
 .sa-section--tight { padding-block: var(--section-y-tight); }
 .sa-section--subtle { background: var(--surface-subtle); }
+/* closing-CTA wrapper: no padding + navy backing so the CTA sits flush to the
+   footer with no light show-through during the scroll reveal */
+.sa-section.sa-section--cta { padding-block: 0; background: var(--navy-800); }
 
 /* keep anchor-linked sections clear of the sticky nav */
 section[id] { scroll-margin-top: 110px; }

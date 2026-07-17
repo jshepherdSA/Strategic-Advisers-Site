@@ -27,9 +27,9 @@ export default function ServicesPage() {
         <ServiceDetail key={section.id} section={section} subtle={i % 2 === 1} flip={i % 2 === 1} />
       ))}
 
-      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
+      <section className="sa-section sa-section--cta">
         <CTASection
-          title="Not Sure Which Services You Need?"
+          title="Give Us Your Challenge, Expect the Solution."
           intro="Tell us what you are trying to accomplish. We will help identify the right mix of strategy, media, and communications support."
         />
       </section>

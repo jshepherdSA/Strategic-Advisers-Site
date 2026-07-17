@@ -221,10 +221,10 @@ export default function Home() {
       </section>
 
       {/* Closing CTA */}
-      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
+      <section className="sa-section sa-section--cta">
         <CTASection
           eyebrow="Get started"
-          title="Ready to Reach the Right Audience?"
+          title="Give Us Your Challenge, Expect the Solution."
           intro="Let's talk about your goals, your audience, and the best way to move people to action."
         />
       </section>

@@ -87,7 +87,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
+      <section className="sa-section sa-section--cta">
         <CTASection
           title="Looking for a Strategic Partner?"
           intro="Let's talk about where your organization is going and how Strategic Advisers can help you get there."

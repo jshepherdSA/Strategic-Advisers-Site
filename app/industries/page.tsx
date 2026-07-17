@@ -33,7 +33,7 @@ export default function IndustriesPage() {
         </div>
       </section>
 
-      <section className="sa-section" style={{ paddingTop: 0, paddingBottom: 0 }}>
+      <section className="sa-section sa-section--cta">
         <CTASection
           title="Your Industry Is Only Part of the Strategy"
           intro="The strongest campaigns are built around your specific audience, goals, competition, and market—not a generic industry template."
