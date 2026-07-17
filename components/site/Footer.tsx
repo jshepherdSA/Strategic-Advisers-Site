@@ -20,6 +20,13 @@ export function Footer() {
               A digital-first communications firm across digital advertising, public
               relations, public affairs, and media strategy.
             </p>
+            <Image
+              src="/logos/google-partner.png"
+              alt="Google Partner"
+              width={317}
+              height={304}
+              className="sa-footer__badge"
+            />
           </div>
 
           <nav className="sa-footer__nav" aria-label="Footer">

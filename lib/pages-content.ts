@@ -23,8 +23,9 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     title: 'Digital Advertising',
     icon: 'target',
     paragraphs: [
-      'Strategic Advisers plans, launches, manages, and optimizes digital advertising campaigns designed to reach specific audiences and support measurable business goals.',
-      'Our digital work supports lead generation, enrollment, e-commerce sales, customer acquisition, recruitment, awareness, event attendance, fundraising, and public education.',
+      "Exceptional digital advertising begins long before the first ad is launched. Strategic Advisers takes a strategic, consultative approach, starting with a comprehensive evaluation of your organization, objectives, target audiences, competitive landscape, customer journey, existing marketing efforts, and market opportunities. We identify what's working, uncover what's not, and develop a customized, data-driven media strategy designed to maximize performance and return on investment.",
+      'From there, our team plans, launches, manages, and continuously optimizes integrated campaigns across Google, Meta, LinkedIn, programmatic display, connected TV, streaming audio, paid search, paid social, geofencing, retargeting, and other digital channels. Every recommendation is intentional, every dollar is accountable, and every campaign is built to achieve measurable business outcomes, not simply generate impressions or clicks.',
+      'Whether your goal is generating qualified leads, increasing enrollment, growing e-commerce revenue, recruiting talent, driving event attendance, increasing petition sign-ups, raising funds, educating the public, or strengthening your brand, Strategic Advisers serves as an extension of your team, providing the senior-level strategy, execution, and optimization needed to outperform your competition.',
     ],
     items: [
       'Programmatic Display Advertising',
@@ -38,7 +39,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
       'Landing Page Strategy',
       'Campaign Reporting and Optimization',
     ],
-    ctaLabel: 'Talk to Us About Digital Advertising',
+    ctaLabel: 'Contact Our Team',
   },
   {
     id: 'media-strategy',
@@ -51,7 +52,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
       'We help connect offline and online media so the campaign feels consistent across every channel.',
     ],
     items: [
-      'Billboard and Out-of-Home Advertising',
+      'Billboard and Digital Out-of-Home Advertising',
       'Radio Advertising',
       'Broadcast Television',
       'Cable Television',
@@ -62,7 +63,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
       'Creative and Message Coordination',
       'Integrated Digital and Traditional Campaigns',
     ],
-    ctaLabel: 'Discuss a Media Plan',
+    ctaLabel: 'Contact Our Team',
   },
   {
     id: 'public-relations',
@@ -83,7 +84,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
       'Message Development',
       'Press Releases and Announcements',
     ],
-    ctaLabel: 'Talk to Our PR Team',
+    ctaLabel: 'Contact Our Team',
   },
   {
     id: 'public-affairs',
@@ -104,7 +105,7 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
       'Government and Community Relations',
       'Message Development',
     ],
-    ctaLabel: 'Discuss a Public Affairs Campaign',
+    ctaLabel: 'Contact Our Team',
   },
   {
     id: 'strategy',
@@ -112,8 +113,9 @@ export const SERVICE_SECTIONS: ServiceSection[] = [
     title: 'Strategy, Measurement and Optimization',
     icon: 'line-chart',
     paragraphs: [
-      'Strong campaigns start with clear goals and improve through consistent analysis.',
-      'Strategic Advisers connects strategy, audience, creative, media, measurement, and reporting so clients understand both campaign activity and business impact.',
+      "The best marketing decisions are driven by data, not assumptions. That's why every engagement begins with a clear strategy, measurable objectives, and a customized reporting framework designed around your business goals, not generic marketing metrics.",
+      "Strategic Advisers integrates audience insights, media performance, creative analysis, conversion tracking, and business intelligence into comprehensive, best-in-class reporting dashboards that provide complete transparency into campaign performance. Clients don't just receive reports; they gain meaningful insights, actionable recommendations, and a clear understanding of what's working, where opportunities exist, and how every marketing dollar is contributing to measurable business results.",
+      'Our team continuously analyzes performance, identifies new opportunities, and refines strategy to maximize efficiency, improve outcomes, and ensure every campaign delivers the strongest possible return on investment.',
     ],
     items: [
       'Audience Research',
@@ -295,10 +297,11 @@ export const PARTNERS: Partner[] = [
     role: 'Partner',
     photo: '/assets/team/Madison.png',
     bio: [
-      'Madison Walton Smith has been an industry leading expert in the digital marketing space for over a decade. Upon graduation from Virginia Tech, she went to work as one of the first employees in New York City for the startup and then publicly traded, The Trade Desk. While at The Trade Desk, she managed and grew a team that handled the media buying for the largest advertising agency in the world, WPP, across the globe.',
-      'Madison then took on the role of Director of Marketing for The Capital Corporation, one of the premier, middle market investment banking firms in the country. There she developed digital and traditional marketing strategies and led marketing teams across multiple portfolio businesses. She was an integral member of the mergers and acquisitions team by performing in depth analysis on marketing, operations and strategic growth for all prospective sell-side businesses. Her creation of digital marketing plans and strategic growth plans helped lead to a top decile closing rate among all US investment banks.',
-      'Madison is one of the founders of Strategic Advisers Digital and leads our team of digital marketing and social media experts. She oversees digital marketing communication and strategy, strategic growth strategy, project management and data analysis.',
-      'Madison lives with her husband in Greenville, SC. Away from work she enjoys spending time with family, playing tennis, traveling and volunteer work.',
+      'Madison Walton Smith is the Founder and Partner of Strategic Advisers Digital and an award-winning digital advertising and strategic communications executive with more than 15 years of experience developing integrated marketing strategies for organizations ranging from startups to Fortune 100 companies. Throughout her career, she has advised executive leadership teams on digital transformation, audience strategy, public relations, public affairs, and measurable business growth across higher education, manufacturing, healthcare, financial services, government, nonprofit, and consumer industries.',
+      "After graduating from Virginia Tech, Madison joined The Trade Desk as one of its earliest employees in New York City during the company's rapid growth. There, she built and led a high-performing media team responsible for managing digital advertising campaigns for WPP, the world's largest advertising agency network, supporting some of the world's most recognizable brands and Fortune 100 companies. This experience provided a deep foundation in programmatic advertising, audience intelligence, large-scale media planning, and data-driven campaign optimization.",
+      'Today, Madison leads the strategic vision for Strategic Advisers, partnering directly with executive leadership teams to solve complex marketing and communications challenges. She develops integrated growth strategies that combine digital advertising, public relations, public affairs, media planning, analytics, and performance measurement into campaigns that drive measurable business results. Madison also serves on the Google Ads Advisory Council, where she collaborates with Google on the future of digital advertising and emerging platform capabilities. Through many of her developed partnerships, Strategic Advisers receives exclusive alpha and beta access to many of the newest advertising technologies and innovations, allowing clients to benefit from cutting-edge tools, advanced capabilities, and early access to features often unavailable to the broader market.',
+      'Known for combining strategic insight with data-driven decision-making, Madison helps organizations navigate complex challenges, identify new opportunities, and build marketing strategies that create lasting business impact.',
+      'Madison lives in Greenville, South Carolina, with her husband and daughter. Outside of work, she enjoys playing tennis, spending time with family, and supporting organizations that strengthen the communities they serve.',
     ],
   },
 ]

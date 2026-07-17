@@ -55,7 +55,7 @@ export default function Home() {
                 href="/contact"
                 iconRight={<ArrowRight size={18} />}
               >
-                Schedule a Discovery Call
+                Contact Our Team
               </Button>
               <Button variant="outline" size="lg" href="/services">
                 Explore Our Services

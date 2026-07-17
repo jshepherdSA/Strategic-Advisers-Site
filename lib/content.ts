@@ -2,7 +2,7 @@
 // Structured copy in use by the app. Full verbatim brief lives in
 // reference/phase-one-content.tsx.
 
-export const CTA_LABEL = 'Schedule a Discovery Call'
+export const CTA_LABEL = 'Contact Our Team'
 export const CTA_HREF = '/contact'
 
 export type NavLink = { label: string; href: string }

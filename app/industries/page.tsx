@@ -36,7 +36,7 @@ export default function IndustriesPage() {
         <CTASection
           title="Your Industry Is Only Part of the Strategy"
           intro="The strongest campaigns are built around your specific audience, goals, competition, and market—not a generic industry template."
-          primaryLabel="Talk to Our Team"
+          primaryLabel="Contact Our Team"
         />
       </section>
     </main>

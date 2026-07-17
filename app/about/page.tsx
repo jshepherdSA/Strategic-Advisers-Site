@@ -105,7 +105,7 @@ export default function AboutPage() {
         <CTASection
           title="Looking for a Strategic Partner?"
           intro="Let's talk about where your organization is going and how Strategic Advisers can help you get there."
-          primaryLabel="Start a Conversation"
+          primaryLabel="Contact Our Team"
         />
       </section>
     </main>
