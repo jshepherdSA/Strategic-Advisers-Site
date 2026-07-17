@@ -7,6 +7,9 @@ import {
   Megaphone,
   House,
   MapPin,
+  Building2,
+  Zap,
+  Sparkles,
   type LucideIcon,
 } from 'lucide-react'
 import type { IndustryIcon as IndustryIconKey } from '@/lib/content'
@@ -20,6 +23,9 @@ const ICONS: Record<IndustryIconKey, LucideIcon> = {
   megaphone: Megaphone,
   house: House,
   'map-pin': MapPin,
+  'building-2': Building2,
+  zap: Zap,
+  sparkles: Sparkles,
 }
 
 export function IndustryIcon({

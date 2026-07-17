@@ -67,11 +67,11 @@ export default function Home() {
             <div className="sa-hero__col sa-hero__col--left">
               <div className="sa-hero__feature">
                 <div className="sa-hero__feature-title">
-                  One team.
+                  One Team.
                   <br />
-                  One strategy.
+                  One Strategy.
                   <br />
-                  Every channel.
+                  Every Channel.
                 </div>
                 <p className="sa-hero__feature-sub">
                   Integrated campaigns across paid, earned &amp; owned media.

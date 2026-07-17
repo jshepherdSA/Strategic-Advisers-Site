@@ -207,6 +207,33 @@ export const INDUSTRY_DETAILS: IndustryDetail[] = [
     description:
       'We help regional brands and multi-location organizations build market awareness, promote individual locations, maintain brand consistency, and connect local campaigns with broader business goals.',
   },
+  {
+    index: '09',
+    name: 'Government & Municipalities',
+    icon: 'building-2',
+    description:
+      'We help government agencies, municipalities, and public institutions communicate with residents, build awareness for programs and services, navigate public issues, and strengthen community engagement.',
+    services:
+      'Relevant services include public affairs, community engagement, digital advertising, media relations, geofencing, and message strategy.',
+  },
+  {
+    index: '10',
+    name: 'Energy & Utilities',
+    icon: 'zap',
+    description:
+      'We help energy providers, utilities, and infrastructure organizations explain complex programs, promote initiatives, reach ratepayers and stakeholders, and communicate clearly during changes or public issues.',
+    services:
+      'Relevant services include public awareness campaigns, stakeholder communications, digital advertising, media relations, and content strategy.',
+  },
+  {
+    index: '11',
+    name: 'Emerging & Specialized Industries',
+    icon: 'sparkles',
+    description:
+      'We help startups, technology companies, and specialized organizations introduce new categories, build credibility, reach niche audiences, and translate complex offerings into clear, compelling messages.',
+    services:
+      'Relevant services include brand awareness, digital advertising, public relations, content strategy, and integrated campaign planning.',
+  },
 ]
 
 /* ----------------------------------- About ----------------------------------- */
@@ -244,6 +271,35 @@ export const DIFFERENTIATORS: Differentiator[] = [
   {
     title: 'Exclusive Access',
     copy: 'We have Alpha and Beta access into existing and emerging technologies that no other marketing firm serving the market has access to.',
+  },
+]
+
+/* ---------------------------------- Partners --------------------------------- */
+
+export type Partner = { name: string; role: string; photo: string; bio: string[] }
+
+export const PARTNERS: Partner[] = [
+  {
+    name: 'Greg Greene',
+    role: 'Partner',
+    photo: '/assets/team/greg.png',
+    bio: [
+      "Greg Greene spent more than 15 years in the finance industry, primarily with Fifth Third Bank. He spent the first eight years of his career as an International Corporate Banking Officer, where he worked exclusively with multi-national companies with operations in the United States. In 2005, he became the Affiliate Head of Business Banking for Fifth Third Bank in Northern Kentucky and soon thereafter the Business Banking Market Manager for Northern Kentucky and Western Cincinnati. In this capacity, he was responsible for a business loan portfolio in excess of 1,000 clients and more than $200 million in loans and $230 million in deposits. In this position, he set strategic direction, oversaw all loan decisions, set marketing direction, and managed a sales force of more than 10 lenders and 48 branches.",
+      "In August of 2011, Greg Greene left Fifth Third to join Strategic Advisers as a partner. At the firm, Greene is in charge of business operations, project management, and is heavily involved as a relationship manager for some of the firm's largest clients. He is commonly involved in relationship management, communication strategy, digital marketing, content development, web development, and audio and video productions.",
+      "Greg Greene is involved and passionate about his community. His current and past involvement includes serving on the Northern Kentucky Chamber of Commerce Board of Directors; Vice Chair of Business Advocacy for the Northern Kentucky Chamber; 2008 Graduate of Leadership Kentucky; 2006 Graduate of Leadership Northern Kentucky; President of the Northern Kentucky International Trade Association; Treasurer and Board Member of the Welcome House of Northern Kentucky; United Way representative for Fifth Third Bank; Governor's Council on International Education for State of Kentucky; World Affairs Council, Japanese America Society; International Friends and Visitors Council; Small Business Development Committee; guest lecturer at Northern Kentucky University and Thomas More College and several other endeavors.",
+      "Greene is a graduate of The Ohio State University. He lives with his wife and family in Newport, Kentucky.",
+    ],
+  },
+  {
+    name: 'Madison Walton-Smith',
+    role: 'Partner',
+    photo: '/assets/team/Madison.png',
+    bio: [
+      'Madison Walton Smith has been an industry leading expert in the digital marketing space for over a decade. Upon graduation from Virginia Tech, she went to work as one of the first employees in New York City for the startup and then publicly traded, The Trade Desk. While at The Trade Desk, she managed and grew a team that handled the media buying for the largest advertising agency in the world, WPP, across the globe.',
+      'Madison then took on the role of Director of Marketing for The Capital Corporation, one of the premier, middle market investment banking firms in the country. There she developed digital and traditional marketing strategies and led marketing teams across multiple portfolio businesses. She was an integral member of the mergers and acquisitions team by performing in depth analysis on marketing, operations and strategic growth for all prospective sell-side businesses. Her creation of digital marketing plans and strategic growth plans helped lead to a top decile closing rate among all US investment banks.',
+      'Madison is one of the founders of Strategic Advisers Digital and leads our team of digital marketing and social media experts. She oversees digital marketing communication and strategy, strategic growth strategy, project management and data analysis.',
+      'Madison lives with her husband in Greenville, SC. Away from work she enjoys spending time with family, playing tennis, traveling and volunteer work.',
+    ],
   },
 ]
 

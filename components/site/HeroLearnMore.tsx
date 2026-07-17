@@ -12,10 +12,15 @@ export function HeroLearnMore() {
     const target = document.getElementById('why')
     if (!target) return
     e.preventDefault()
+    // Land the section top exactly at the bottom of the sticky nav so the
+    // previous section is no longer visible.
+    const nav = document.querySelector('.sa-nav')
+    const navHeight = nav ? nav.getBoundingClientRect().height : 104
+    const y = target.getBoundingClientRect().top + window.scrollY - navHeight
     if (window.__lenis) {
-      window.__lenis.scrollTo(target, { offset: -100 })
+      window.__lenis.scrollTo(y)
     } else {
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      window.scrollTo({ top: y, behavior: 'smooth' })
     }
   }
 

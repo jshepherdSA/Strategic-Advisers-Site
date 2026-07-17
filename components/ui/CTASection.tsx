@@ -23,7 +23,7 @@ export function CTASection({
   return (
     <div className="sa-cta reveal">
       <Image
-        src="/logos/sa-mark-white.png.png"
+        src="/logos/sa-mark-white.png"
         alt=""
         aria-hidden
         width={380}

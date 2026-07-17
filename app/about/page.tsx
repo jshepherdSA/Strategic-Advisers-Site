@@ -4,7 +4,8 @@ import { PageHero } from '@/components/site/PageHero'
 import { Eyebrow } from '@/components/ui/Eyebrow'
 import { SectionHeader } from '@/components/ui/SectionHeader'
 import { CTASection } from '@/components/ui/CTASection'
-import { ABOUT_STORY, DIFFERENTIATORS, VALUES } from '@/lib/pages-content'
+import { PartnerCard } from '@/components/ui/PartnerCard'
+import { ABOUT_STORY, DIFFERENTIATORS, PARTNERS, VALUES } from '@/lib/pages-content'
 
 export const metadata: Metadata = {
   title: 'About Strategic Advisers | Digital Advertising & PR Firm',
@@ -22,7 +23,6 @@ export default function AboutPage() {
           'Strategic Advisers helps organizations communicate clearly, reach the right audiences, and turn strategy into action.',
           'Our firm combines the storytelling discipline of journalism and public relations with the precision, targeting, and measurement of modern digital advertising.',
         ]}
-        media
       />
 
       {/* Our Story */}
@@ -69,8 +69,22 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Values */}
+      {/* Partners */}
       <section className="sa-section">
+        <div className="sa-container">
+          <div className="reveal">
+            <SectionHeader eyebrow="Leadership" title="Meet the Partners" />
+          </div>
+          <div className="sa-partners">
+            {PARTNERS.map((partner) => (
+              <PartnerCard key={partner.name} partner={partner} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Values */}
+      <section className="sa-section sa-section--subtle">
         <div className="sa-container">
           <div className="reveal">
             <SectionHeader eyebrow="Principles" title="Our Values" />

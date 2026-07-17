@@ -20,7 +20,6 @@ export default function ServicesPage() {
           'Strategic Advisers helps organizations reach targeted audiences, strengthen visibility, manage complex communications, and generate measurable action.',
           'Our services can work independently or as part of an integrated campaign.',
         ]}
-        media
       />
 
       {SERVICE_SECTIONS.map((section, i) => (

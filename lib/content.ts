@@ -65,6 +65,9 @@ export type IndustryIcon =
   | 'megaphone'
   | 'house'
   | 'map-pin'
+  | 'building-2'
+  | 'zap'
+  | 'sparkles'
 
 export type HomeIndustry = { label: string; icon: IndustryIcon }
 
@@ -77,6 +80,9 @@ export const INDUSTRIES: HomeIndustry[] = [
   { label: 'Public Sector & Advocacy', icon: 'megaphone' },
   { label: 'Housing & Community Development', icon: 'house' },
   { label: 'Regional & Multi-Location Businesses', icon: 'map-pin' },
+  { label: 'Government & Municipalities', icon: 'building-2' },
+  { label: 'Energy & Utilities', icon: 'zap' },
+  { label: 'Emerging & Specialized Industries', icon: 'sparkles' },
 ]
 
 export type WhyPoint = { title: string; copy: string }
