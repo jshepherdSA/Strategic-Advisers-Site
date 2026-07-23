@@ -5,6 +5,7 @@ import { SmoothScroll } from '@/components/site/SmoothScroll'
 import { ScrollReveal } from '@/components/site/ScrollReveal'
 import { NavBar } from '@/components/site/NavBar'
 import { Footer } from '@/components/site/Footer'
+import { CookieBanner } from '@/components/site/CookieBanner'
 
 // Display: Jost (geometric sans, closest Google match to the wordmark).
 // Body/UI: IBM Plex Sans. Data/labels: IBM Plex Mono.
@@ -50,6 +51,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <NavBar />
         {children}
         <Footer />
+        <CookieBanner />
       </body>
     </html>
   )

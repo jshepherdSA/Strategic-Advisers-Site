@@ -35,8 +35,9 @@ export function Footer() {
                 {item.label}
               </Link>
             ))}
-            {/* Placeholder until a legal page exists */}
-            <Link href="#">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
+            <Link href="/cookie-policy">Cookie Policy</Link>
+            <Link href="/accessibility">Accessibility</Link>
           </nav>
         </div>
 
